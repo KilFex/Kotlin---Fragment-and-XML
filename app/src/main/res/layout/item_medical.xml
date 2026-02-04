@@ -36,6 +36,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="10dp"/>
+
             <TextView
                 android:id="@+id/tv_speciality"
                 android:layout_width="wrap_content"
@@ -43,16 +44,54 @@
                 tools:text="Dermato-Genetics"
                 app:layout_constraintTop_toBottomOf="@+id/tv_nameDoctor"
                 app:layout_constraintEnd_toEndOf="@+id/tv_nameDoctor"
-                app:layout_constraintStart_toStartOf="@+id/tv_nameDoctor"
-                />
+                app:layout_constraintStart_toStartOf="@+id/tv_nameDoctor" />
+
+            <Button
+                android:id="@+id/bt_info"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Info"
+                app:layout_constraintStart_toEndOf="@+id/iv_doctor"
+                app:layout_constraintTop_toBottomOf="@+id/tv_speciality"
+                app:layout_constraintEnd_toStartOf="@+id/ly_icons"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <LinearLayout
+                android:id="@+id/ly_icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_speciality"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bt_info"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingHorizontal="15dp">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/calendario"
+                    android:layout_marginHorizontal="8dp"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/iLetra"
+                    android:layout_marginHorizontal="8dp"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/interrogacion"
+                    android:layout_marginHorizontal="8dp"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/corazon"
+                    android:layout_marginHorizontal="8dp"/>
+"
+
+            </LinearLayout>
             
         </androidx.constraintlayout.widget.ConstraintLayout>
-        
 
-        
-        
     </androidx.cardview.widget.CardView>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

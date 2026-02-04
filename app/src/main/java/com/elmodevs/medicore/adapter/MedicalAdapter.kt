@@ -7,7 +7,7 @@ import com.elmodevs.medicore.DataMedical
 class MedicalAdapter(val medicalInfo:List<DataMedical>) : RecyclerView.Adapter<MedicalViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MedicalViewHolder {
-        TODO("Not yet implemented")
+        val binding =
     }
 
     override fun getItemCount(): Int  = medicalInfo.size
